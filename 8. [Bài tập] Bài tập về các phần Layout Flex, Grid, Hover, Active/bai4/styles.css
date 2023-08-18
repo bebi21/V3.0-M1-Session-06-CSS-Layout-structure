@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "section article "
+    "section   aside"
+    "section  aside-one"
+    "section-one  aside-one";
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+.section {
+  grid-area: section;
+  background-color: green;
+}
+.article {
+  grid-area: article;
+  background-color: chocolate;
+}
+.aside {
+  grid-area: aside;
+  background-color: red;
+}
+.aside-one {
+  grid-area: aside-one;
+  background-color: yellow;
+}
+.section-one {
+  grid-area: section-one;
+  background-color: darkblue;
+}
